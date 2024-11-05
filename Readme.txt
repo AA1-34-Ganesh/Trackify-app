@@ -31,7 +31,7 @@ Usage
 
 1. Open the project in Visual Studio Code.
 2. Open `index.html` and start the Live Server by right-clicking and selecting "Open with Live Server".
-3. The application will be available at `https://aa1-34-ganesh.github.io/Trackify-app/`.
+3. The application will be available at `https://aa1-34-ganesh.github.io/Trackify-app/index.html`.
 
  **index.html**: The main landing page of the application.
 - **login.html**: The login page for users.
