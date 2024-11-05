@@ -1,0 +1,13 @@
+Requirements for Trackiy
+
+Live Server extension for Visual Studio Code
+This is a VS Code extension and not a Python package, so it should be installed from the VS Code marketplace.
+You can install it by searching for "Live Server" in the Extensions view in VS Code.
+
+If you need to specify any other dependencies, list them here.
+For example, if you are using any Python packages, you can list them like this:
+package_name==version
+
+Example:
+flask==2.0.1
+requests==2.25.1
