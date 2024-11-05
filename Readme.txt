@@ -1,8 +1,8 @@
-# Trackiy
+Trackiy
 
 Trackiy is a web application designed to help you manage your expenses efficiently. It allows you to track your spending, categorize expenses, and view a summary of your total expenses.
 
-## Table of Contents
+ Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -11,7 +11,7 @@ Trackiy is a web application designed to help you manage your expenses efficient
 - [Contributing](#contributing)
 - [License](#license)
 
-## Installation
+Installation
 
 1. Clone the repository:
     ```
@@ -27,7 +27,7 @@ Trackiy is a web application designed to help you manage your expenses efficient
     ```
 4. Install the Live Server extension in Visual Studio Code.
 
-## Usage
+Usage
 
 1. Open the project in Visual Studio Code.
 2. Open `index.html` and start the Live Server by right-clicking and selecting "Open with Live Server".
@@ -42,17 +42,17 @@ Trackiy is a web application designed to help you manage your expenses efficient
 - **login_style.css**: Contains the styles specific to the login and signup pages.
 - **.vscode/settings.json**: Configuration for the Live Server extension.
 
-## Features
+Features
 
 - **Expense Tracking**: Add, view, and delete expenses.
 - **Categorization**: Categorize expenses by type.
 - **Total Calculation**: View the total amount of expenses.
 - **Responsive Design**: The application is designed to be responsive and user-friendly.
 
-## Contributing
+Contributing
 
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
-## License
+License
 
 This project is licensed under the MIT License.
