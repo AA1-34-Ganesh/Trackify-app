@@ -14,24 +14,22 @@ Trackiy is a web application designed to help you manage your expenses efficient
 Installation
 
 1. Clone the repository:
-    ```
-    git clone https://github.com/AA!-34-Ganesh/trackiy.git
-    ```
+    
+    git clone https://github.com/AA!-34-Ganesh/trackify.git
+    
 2. Open the project directory:
-    ```sh
-    cd trackiy
-    ```
+    
+    cd trackify
+    
 3. Open the project in Visual Studio Code:
-    ```sh
-    code .
-    ```
+    
 4. Install the Live Server extension in Visual Studio Code.
 
 Usage
 
 1. Open the project in Visual Studio Code.
 2. Open `index.html` and start the Live Server by right-clicking and selecting "Open with Live Server".
-3. The application will be available at `https://aa1-34-ganesh.github.io/Trackify-app/index.html`.
+3. The application will be available at `https://aa1-34-ganesh.github.io/Trackify-app/`.
 
  **index.html**: The main landing page of the application.
 - **login.html**: The login page for users.
