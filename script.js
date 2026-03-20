@@ -57,7 +57,7 @@ addBtn.addEventListener("click", function() {
     dateCell.textContent = expense.date;
     deleteCell.appendChild(deleteBtn);
 
-    // Clear inputs
+    
     categorySelect.value = "";
     amountInput.value = "";
     dateInput.value = "";

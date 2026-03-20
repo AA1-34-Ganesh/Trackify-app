@@ -1,6 +1,6 @@
-Trackiy
+Track
 
-Trackiy is a web application designed to help you manage your expenses efficiently. It allows you to track your spending, categorize expenses, and view a summary of your total expenses.
+Track is a web application designed to help you manage your expenses efficiently. It allows you to track your spending, categorize expenses, and view a summary of your total expenses.
 
  Table of Contents
 
@@ -15,11 +15,11 @@ Installation
 
 1. Clone the repository:
     
-    git clone https://github.com/AA!-34-Ganesh/trackify.git
+    git clone https://github.com/AA!-34-Ganesh/Track.git
     
 2. Open the project directory:
     
-    cd trackify
+    cd Track
     
 3. Open the project in Visual Studio Code:
     
@@ -29,7 +29,7 @@ Usage
 
 1. Open the project in Visual Studio Code.
 2. Open `index.html` and start the Live Server by right-clicking and selecting "Open with Live Server".
-3. The application will be available at `https://aa1-34-ganesh.github.io/Trackify-app/`.
+3. The application will be available at `https://aa1-34-ganesh.github.io/Track-app/`.
 
  **index.html**: The main landing page of the application.
 - **login.html**: The login page for users.
