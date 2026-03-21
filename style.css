@@ -1,4 +1,4 @@
-ul{
+/* ul{
   padding: 0;
   margin: 0;
 }
@@ -7,11 +7,9 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
 }
-
 ul{
   list-style: none;
 }
-
 body {
   background-color:#11928d;
   color: white;
@@ -20,11 +18,9 @@ body {
   scroll-behavior: smooth;
   line-height: 1.5;
 }
-
 ul {
   list-style: none;
 }
-
 .logo a {
   text-decoration: none;
   color: white;
@@ -38,7 +34,8 @@ ul {
   font-weight: 300;
   border:2px solid black;
   padding: 10px;
-  border-radius:10px;
+  border-radius:10px; 
+  display: flex;
 }
 .main-nav a:hover,.active {
   text-decoration: none;
@@ -59,12 +56,10 @@ nav {
   align-items: center;
   margin-top: 15px;
 }
-
 .logo h1 {
   margin: 0;
   padding: 0;
 }
-
 nav ul {
   display: flex;
   gap: 25px;
@@ -156,4 +151,60 @@ footer p{
   height: 3em;
   bottom: 0.5em;
   left:40%;
+} */
+ul{
+  list-style: none;
+}
+.main-nav {
+  display: flex;
+  justify-content: space-around;
+ 
+}
+.main-nav a{
+  border: 2px solid black;
+  padding: 6px;
+  border-radius: 6px;
+  color: white;
+}
+.main-nav a:hover{
+  background-color: lightcoral;
+}
+.main-nav, .link{
+   text-decoration: none;
+   margin: 0px;
+}
+nav, .logo{
+   text-decoration: none;
+}
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  background-color:#11928d;
+  color: white;
+  font-size: 20px;
+  scroll-behavior: smooth;
+  line-height: 1.5;
+  max-width: fit-content;
+  
+}
+.hero, .about, .contact, h2{
+text-align: center;
+}
+.contact label{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+#submit, .hero button{
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: medium;
+  color: white;
+   text-decoration: none;
+}
+#submit:hover{
+    background-color: lightcoral;
 }

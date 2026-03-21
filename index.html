@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Track</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amarante&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="page-container">
@@ -14,7 +16,7 @@
         <h1><a href="/">Track</a></h1>
       </div>
       <ul class="main-nav">
-        <li><a class="link active" href="#home">Home</a></li>
+        <li><a class="link" href="#home">Home</a></li>
         <li><a class="link" href="#about">About</a></li>
         <li><a class="link" href="#contact">Contact</a></li>
         <li><a class="link" href="login.html">Log In</a></li>
@@ -34,9 +36,15 @@
           expenses efficiently. These websites provide a centralized location to record, categorize, and analyze
           expenses, making it easier to create budgets, track spending, and identify areas for cost reduction.</p>
       </div>
-      <div id="contact" class="contact">
+      <div class="contact">
         <h2>Contact</h2>
+        <label>Name:</label>
+        <input type="text" placeholder="Enter the name" name="">
+        <label>Mobile Number:</label>
+        <input type="tel" placeholder="Enter mobile number"/>
+        <label>Email:</label>
         <input type="email" placeholder="Enter your mail id">
+        <button id="submit">Submit</button>
       </div>
       <footer>
         <div class="line"></div>
@@ -44,5 +52,4 @@
       </footer>
     </main>
 </body>
-
 </html>
