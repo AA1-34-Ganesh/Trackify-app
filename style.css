@@ -208,7 +208,9 @@ text-align: center;
 }
 .hero a{
   text-decoration: none;
-
+}
+.hero a:hover{
+   background-color: lightcoral;
 }
 input[type=text],
 input[type=tel],
@@ -221,8 +223,7 @@ input[type=email] {
 #submit, .hero button{
   border: 2px solid black;
   border-radius: 4px;
-  padding: 4px;
-  font-size: medium;
+  font-size:20px;
    text-decoration: none;
    cursor: pointer;
 }
