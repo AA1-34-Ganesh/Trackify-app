@@ -191,6 +191,7 @@ body {
   line-height: 1.5;
   max-width: fit-content;
   font-family: "Poppins", sans-serif;
+  text-align: center;
 }
 .hero, .about, .contact, h2{
 text-align: center;
@@ -237,4 +238,10 @@ input{
 .down{
   margin: 20px;
   text-align: center;
+}
+.expenses-list{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
