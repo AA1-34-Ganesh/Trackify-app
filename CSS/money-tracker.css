@@ -1,0 +1,75 @@
+body {
+  background:linear-gradient(rgb(189, 64, 147),rgb(26, 150, 192));
+  color: white;
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+}
+ul{
+    list-style: none;
+}
+.logo a{
+     text-decoration: none;
+}
+.main-nav a{
+  border: 2px solid black;
+  padding: 6px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+}
+.main-nav a:hover{
+  background-color: lightcoral;
+}
+input[type=text],
+input[type=tel],
+input[type=number],input[type=date] {
+  border-radius: 5px;
+  height: 30px;
+  min-width:300px;
+  font-size: 20px;
+}
+#add-btn{
+  border: 2px solid black;
+  border-radius: 4px;
+  font-size:20px;
+   text-decoration: none;
+   cursor: pointer;
+}
+.expenses-list{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.input-section{
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.input-section label{
+  margin: 10px;
+}
+.category, .amount, .date{
+  margin: 20px;
+  font-size: 25px;
+}
+.delete-btn{
+  border: 2px solid black;
+  color:black;
+  padding: 4px;
+  font-size: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.delete-btn:hover{
+    background-color: red;
+}
+tr th,td  {
+  padding: 10px;
+  border-radius: 3px;
+  margin: 10px;
+}

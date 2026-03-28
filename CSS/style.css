@@ -3,6 +3,8 @@ ul{
 }
 .main-nav {
   display: flex;
+  flex-direction: row;
+  min-width: 40px;
   justify-content: space-around;
   position:relative;
 }
@@ -14,28 +16,17 @@ ul{
   padding: 6px;
   border-radius: 6px;
   color: white;
+  text-decoration: none;
 }
 .main-nav a:hover{
   background-color: lightcoral;
 }
-.main-nav, .link{
-   text-decoration: none;
-   margin: 0px;
-}
-nav, .logo{
-   text-decoration: none;
-   text-align: center;
-}
 body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
   background:linear-gradient(rgb(189, 64, 147),rgb(26, 150, 192));
   color: white;
   font-size: 20px;
-  scroll-behavior: smooth;
   line-height: 1.5;
-  max-width: fit-content;
+  min-width: none;
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
@@ -54,27 +45,21 @@ text-align: center;
 }
 .hero a{
   text-decoration: none;
-}
-.hero a:hover{
-   background-color: lightcoral;
+  color:black;
 }
 input[type=text],
 input[type=tel],
-input[type=email],input[type=number],input[type=date] {
+input[type=email] {
   border-radius: 5px;
   height: 30px;
   min-width:300px;
   font-size: 20px;
 }
-#submit, .hero button, #add-btn{
+#submit, .hero button{
   border: 2px solid black;
   border-radius: 4px;
   font-size:20px;
-   text-decoration: none;
    cursor: pointer;
-}
-#submit:hover{
-    background-color: lightcoral;
 }
 input{
   border: 1px solid black;
@@ -85,16 +70,3 @@ input{
   margin: 20px;
   text-align: center;
 }
-.input-section{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-/* .category, .amount, .date{
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  width: 100%;
-  justify-content: center;
-} */
