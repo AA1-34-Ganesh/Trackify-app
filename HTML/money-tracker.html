@@ -16,18 +16,22 @@
                 <li><a class="link" href="index.html">Home</a></li>
             </ul>
         </nav>
-
-        <main class="main">
             <div class="input-section">
                 <h1>Money Track Web</h1>
+               <div class="category"> 
                 <label for="category-select">Category:</label>
                 <input type="text" placeholder="Enter the category name" id="category-select"/>
+               </div>
+               <div class="amount">
                 <label for="amount-input">Amount:</label>
                 <input type="number" id="amount-input" placeholder="Enter the amount">
+               </div>
+               <div class="date"> 
                 <label for="date-input">Date:</label>
                 <input type="date" id="date-input">
+               </div>
                 <button id="add-btn">Add</button>
-                
+            </div>     
                 <div class="expenses-list">
                     <h2>Expenses List</h2>
                     <table border="1">
@@ -51,9 +55,7 @@
                         </tfoot>
                     </table>
                 </div>
-            </div>
-        </main>
-    </div>
+        </div>
     <script src="script.js"></script>
 </body>
 </html>
