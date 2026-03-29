@@ -1,6 +1,10 @@
+:root{
+  --primary-bg-color:linear-gradient(rgb(189, 64, 147),rgb(26, 150, 192));
+  --primary-color:white;
+}
 body {
-  background:linear-gradient(rgb(189, 64, 147),rgb(26, 150, 192));
-  color: white;
+  background:var(--primary-bg-color);
+  color:var(--primary-color);
   font-size: 20px;
   line-height: 1.5;
   font-family: "Poppins", sans-serif;
@@ -16,7 +20,7 @@ ul{
   border: 2px solid black;
   padding: 6px;
   border-radius: 6px;
-  color: white;
+  color:var(--primary-color);
   text-decoration: none;
 }
 .main-nav a:hover{
