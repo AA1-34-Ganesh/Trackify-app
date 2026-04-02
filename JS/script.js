@@ -45,6 +45,7 @@ addBtn.addEventListener("click", function() {
     deleteBtn.addEventListener("click", function() {
         const index = expenses.indexOf(expense);
         if (index > -1) {
+            confirm("Are you sure to delete?");
             expenses.splice(index, 1);
             totalAmount -= expense.amount;
             totalAmountCell.textContent = totalAmount;

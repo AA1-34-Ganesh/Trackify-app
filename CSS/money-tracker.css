@@ -1,5 +1,5 @@
 :root{
-  --primary-bg-color:linear-gradient(rgb(189, 64, 147),rgb(26, 150, 192));
+  --primary-bg-color:rgb(97, 142, 160);
   --primary-color:white;
 }
 body {
@@ -24,7 +24,7 @@ ul{
   text-decoration: none;
 }
 .main-nav a:hover{
-  background-color: lightcoral;
+  background-color:rgb(163, 129, 197);
 }
 input[type=text],
 input[type=tel],
