@@ -1,10 +1,46 @@
 :root{
-  --primary-bg-color:linear-gradient(rgb(189, 64, 147),rgb(26, 150, 192));
+  --primary-bg-color:rgb(97, 142, 160);
   --primary-color:white;
 }
+header{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  z-index: 10;
+  background-color: rgb(218, 148, 82);
+  backdrop-filter: blur(10px);
+}
+body {
+  background:var(--primary-bg-color);
+  color:var(--primary-color);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.header-container, .main-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:2.5rem;
+}
+.app-name{
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 6rem;
+  text-transform: uppercase;
+}
+
 ul{
   list-style: none;
 }
+.main-nav a, .app-name a{
+  text-decoration: none;
+  color:var(--primary-color);
+}
+.main-nav a:hover{
+  background-color:rgb(163, 129, 197);
+}
+/*
 .main-nav {
   display: flex;
   flex-direction: row;
@@ -25,15 +61,7 @@ ul{
 .main-nav a:hover{
   background-color: lightcoral;
 }
-body {
-  background:var(--primary-bg-color);
-  color:var(--primary-color);
-  font-size: 20px;
-  line-height: 1.5;
-  min-width: none;
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-}
+
 .hero, .about, .contact, h2{
 text-align: center;
 }
@@ -73,4 +101,4 @@ input{
 .down{
   margin: 20px;
   text-align: center;
-}
+} */
