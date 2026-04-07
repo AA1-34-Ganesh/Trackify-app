@@ -1,27 +1,33 @@
 :root{
-  --primary-bg-color:rgb(97, 142, 160);
-  --primary-color:white;
+  --primary-bg-color:#f2a65a;
+  --text-color:white;
+}
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 body {
   background:var(--primary-bg-color);
-  color:var(--primary-color);
+  color:var(--text-color);
   font-size: 20px;
   line-height: 1.5;
   font-family: "Poppins", sans-serif;
-  margin: 0px;
 }
 ul{
     list-style: none;
 }
 .logo a{
      text-decoration: none;
+     color:var(--text-color);
 }
 .main-nav a{
   border: 2px solid black;
   padding: 6px;
   border-radius: 6px;
-  color:var(--primary-color);
+  color:var(--text-color);
   text-decoration: none;
+  margin: 10px;
 }
 .main-nav a:hover{
   background-color:rgb(163, 129, 197);
@@ -30,16 +36,22 @@ input[type=text],
 input[type=tel],
 input[type=number],input[type=date] {
   border-radius: 5px;
+  margin: 20px;
   height: 30px;
   min-width:300px;
   font-size: 20px;
 }
 #add-btn{
   border: 2px solid black;
-  border-radius: 4px;
+  padding: 4px;
+  width:50%;
+  border-radius: 40px;
   font-size:20px;
    text-decoration: none;
    cursor: pointer;
+   background-color: #8e6bb3;
+   color: var(--text-color);
+   font-weight: bold;
 }
 .expenses-list{
     display:flex;
@@ -48,18 +60,16 @@ input[type=number],input[type=date] {
     text-align: center;
 }
 .input-section{
-  margin-top: 0px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-.input-section label{
-  margin: 10px;
-}
-.category, .amount, .date{
-  margin: 20px;
-  font-size: 25px;
+input{
+  display: flex;
+  padding:20px;
+  font-weight: bold;
+  
 }
 .delete-btn{
   border: 2px solid black;
