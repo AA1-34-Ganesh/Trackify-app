@@ -28,7 +28,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 100;
-    background-color: var(--primary-color);
+    background-color: #8e6bb3;
     padding: 1rem 5%;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
@@ -63,7 +63,11 @@ header {
 }
 
 .main-nav a:hover {
-    color: var(--secondary-color);
+    
+    padding: 10px ;
+    border-radius: 10px;
+    background-color:#bda1db79 ;
+    /* box-shadow: 2px 2px 10px #5e3e80; */
 }
 
 .hero-section {
