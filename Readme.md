@@ -47,9 +47,7 @@ Features
 - **Total Calculation**: View the total amount of expenses.
 - **Responsive Design**: The application is designed to be responsive and user-friendly.
 
-Contributing
-
-Contributions are welcome! Please fork the repository and create a pull request with your changes.
+No Contribution 
 
 License
 
