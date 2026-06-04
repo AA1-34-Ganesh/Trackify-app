@@ -8,29 +8,9 @@ Track is a web application designed to help you manage your expenses efficiently
 - [Usage](#usage)
 - [File Structure](#file-structure)
 - [Features](#features)
-- [Contributing](#contributing)
 - [License](#license)
 
-Installation
-
-1. Clone the repository:
-    
-    git clone https://github.com/AA!-34-Ganesh/Track.git
-    
-2. Open the project directory:
-    
-    cd Track
-    
-3. Open the project in Visual Studio Code:
-    
-4. Install the Live Server extension in Visual Studio Code.
-
 Usage
-
-1. Open the project in Visual Studio Code.
-2. Open `index.html` and start the Live Server by right-clicking and selecting "Open with Live Server".
-3. The application will be available at `https://aa1-34-ganesh.github.io/Track-app/`.
-
  **index.html**: The main landing page of the application.
 - **login.html**: The login page for users.
 - **signup.html**: The signup page for new users.
