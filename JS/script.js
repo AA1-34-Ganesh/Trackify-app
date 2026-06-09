@@ -1,4 +1,6 @@
-let expenses = JSON.parse(localStorage.getItem("Expenses")) || [];
+// let expenses = JSON.parse(localStorage.getItem("Expenses")) || [];
+let url="http://localhost:3001/api/expenses"
+let expenses=[]
 let totalAmount = 0;
 
 const categorySelect = document.getElementById("category-select");
@@ -8,6 +10,11 @@ const addBtn = document.getElementById("add-btn");
 const expensesTableBody = document.getElementById("expense-table-body");
 const totalAmountCell = document.getElementById("total-amount");
 
+function loadExpenses(){
+ fetch(url).then(response=>response.json()).then(data=>{expenses=data;
+    renderExpenses()})
+    .catch(error=>console.log("Error:",error))
+}
 function renderExpenses() {
     expensesTableBody.innerHTML = "";
     totalAmount = 0;
@@ -33,7 +40,6 @@ function renderExpenses() {
         deleteBtn.addEventListener("click", function () {
             if (confirm("Are you sure you want to delete this expense?")) {
                 expenses.splice(index, 1);
-                localStorage.setItem("Expenses", JSON.stringify(expenses));
                 renderExpenses();
             }
         });
@@ -50,22 +56,26 @@ addBtn.addEventListener("click", function () {
     const date = dateInput.value;
 
     if (category === '') 
-        return alert("Please select a category");
+        return alert("Please enter a category");
     if (isNaN(amount) || amount <= 0) 
         return alert("Please enter a valid amount");
     if (date === '') 
         return alert("Please select a date");
 
-    const expense = { category, amount, date };
-
-    expenses.push(expense);
-    localStorage.setItem("Expenses", JSON.stringify(expenses));
-
-    renderExpenses();
-
+    fetch(url,{
+        method:'POST',
+        headers:{
+            'Content-Type':'application/json'
+        },
+        body:JSON.stringify({ category, amount, date })
+    }).then(response=>response.json())
+    .then(()=>loadExpenses())
+    .catch(error=>console.error("Error:",error));
+    // expenses.push(expense);
+    // localStorage.setItem("Expenses", JSON.stringify(expenses));
     categorySelect.value = "";
     amountInput.value = "";
     dateInput.value = "";
 });
 
-renderExpenses();
+loadExpenses()
