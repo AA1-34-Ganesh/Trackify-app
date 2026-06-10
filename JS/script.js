@@ -39,8 +39,13 @@ function renderExpenses() {
 
         deleteBtn.addEventListener("click", function () {
             if (confirm("Are you sure you want to delete this expense?")) {
-                expenses.splice(index, 1);
-                renderExpenses();
+                fetch(`${url}/${expense.id}`,{
+                    method:'DELETE',
+                    headers:{
+                        'Content-type':'application/json'
+                    }
+                }).then(res=>res.json()).then(()=>loadExpenses()).catch(error=>console.log("Error:",error))
+            
             }
         });
 
@@ -71,8 +76,7 @@ addBtn.addEventListener("click", function () {
     }).then(response=>response.json())
     .then(()=>loadExpenses())
     .catch(error=>console.error("Error:",error));
-    // expenses.push(expense);
-    // localStorage.setItem("Expenses", JSON.stringify(expenses));
+
     categorySelect.value = "";
     amountInput.value = "";
     dateInput.value = "";
