@@ -1,5 +1,5 @@
 // let expenses = JSON.parse(localStorage.getItem("Expenses")) || [];
-let url="http://localhost:3001/api/expenses"
+let url="http://localhost:3000/api/expenses"
 let expenses=[]
 let totalAmount = 0;
 
@@ -31,7 +31,7 @@ function renderExpenses() {
 
         categoryCell.textContent = expense.category;
         amountCell.textContent = expense.amount;
-        dateCell.textContent = expense.date;
+        dateCell.textContent = new Date(expense.taskTime).toLocaleDateString('en-GB');
 
         const deleteBtn = document.createElement("button");
         deleteBtn.textContent = "Delete";
@@ -72,7 +72,11 @@ addBtn.addEventListener("click", function () {
         headers:{
             'Content-Type':'application/json'
         },
-        body:JSON.stringify({ category, amount, date })
+       body: JSON.stringify({
+    category: category,
+    amount: amount,
+    taskTime: date
+})
     }).then(response=>response.json())
     .then(()=>loadExpenses())
     .catch(error=>console.error("Error:",error));

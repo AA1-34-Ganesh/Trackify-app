@@ -1,5 +1,7 @@
+require('dotenv').config()
 const express=require('express')
 const app=express()
+const Task=require('./models/tasks')
 const cors=require('cors');
 
 app.use(express.json())
@@ -7,32 +9,29 @@ app.use(cors({
     'origin':"http://127.0.0.1:5500",
     'credentials':true
 }))
-let expenses=[]
+
 let count=1;
 app.get("/api/expenses",(req,res)=>{
-    res.status(200).json(expenses);
+    Task.find({}).then((expenses)=>{
+        res.json(expenses)
+    })
 })
-app.post("/api/expenses",(req,res)=>{
-   let {category, amount, date}=req.body;
-   let expense={
-    id:count++,
-    category,
-    amount,
-    date
-   };
-   expenses.push(expense);
-    
-   res.status(201).json({
-    message:"Expense added successfully"
-   })
-})
-app.delete("/api/expenses/:id",(req,res)=>{
-    let id=Number(req.params.id);
-    expenses=expenses.filter(expense=>expense.id!==id);
+app.post("/api/expenses", (req, res) => {
+    const task = new Task(req.body);
 
-    res.status(200).send({
-        message:"Expense deleted successfully"
-    });
+    task.save()
+        .then(result => {
+            res.status(201).json(result);
+        });
+});
+app.delete("/api/expenses/:id",(req,res)=>{
+    Task.findByIdAndDelete(req.params.id)
+    .then(()=>{
+        res.status(204).end()
+    })
+    .catch((error)=>{
+        console.log("Error",error);
+    })
 })
 const PORT=process.env.PORT || 3001
 app.listen(PORT,()=>{
